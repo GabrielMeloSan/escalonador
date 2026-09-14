@@ -9,8 +9,7 @@ def construir(notebook, estado):
     ttk.Label(
         frame,
         text="Sorteia vários cenários e roda os 6 algoritmos em cada um, "
-        "comparando as médias — a ordenação entre algoritmos se estabiliza "
-        "com algumas dezenas de cenários (R9).",
+        "comparando as médias.",
         wraplength=600,
         justify="left",
     ).pack(padx=10, pady=10, anchor="w")

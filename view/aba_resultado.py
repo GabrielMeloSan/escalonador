@@ -47,7 +47,7 @@ def construir(notebook, estado):
     canvas.pack(side="top", fill="both", expand=True)
     scroll_x.pack(side="bottom", fill="x")
 
-    recursos_frame = ttk.LabelFrame(frame, text="Bloqueios por recurso (R5)")
+    recursos_frame = ttk.LabelFrame(frame, text="Bloqueios por recurso")
     colunas_recursos = ("tarefa", "recurso", "inicio", "fim", "tipo")
     titulos_recursos = ("Tarefa", "Recurso", "Início", "Fim", "Classificação")
     tabela_recursos = ttk.Treeview(recursos_frame, columns=colunas_recursos, show="headings", height=4)

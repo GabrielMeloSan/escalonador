@@ -34,7 +34,7 @@ def construir(notebook, estado, ir_para_resultado, atualizar_resultado):
     entrada_alfa.insert(0, "0")
 
     protocolo_var = tk.StringVar(value="Nenhum")
-    label_protocolo = ttk.Label(params_frame, text="Protocolo de recurso (R6/R7):")
+    label_protocolo = ttk.Label(params_frame, text="Protocolo de recurso:")
     protocolo_frame = ttk.Frame(params_frame)
     for nome in _PROTOCOLOS:
         ttk.Radiobutton(protocolo_frame, text=nome, variable=protocolo_var, value=nome).pack(side="left", padx=(0, 10))

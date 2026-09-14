@@ -26,7 +26,7 @@ def construir(notebook, estado):
     entrada_prioridade.grid(row=1, column=2, padx=5)
 
     secao_var = tk.BooleanVar(value=False)
-    secao_frame = ttk.LabelFrame(frame, text="Seção crítica (opcional — R5)")
+    secao_frame = ttk.LabelFrame(frame, text="Seção crítica (opcional)")
     secao_frame.pack(padx=10, pady=(0, 10), fill="x")
 
     ttk.Checkbutton(secao_frame, text="Esta tarefa declara seção crítica", variable=secao_var).grid(
