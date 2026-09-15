@@ -3,10 +3,10 @@
 Projeto prático da disciplina de Sistemas Operacionais, do 8º semestre do curso de Engenharia de Computação, ministrada por Vinicius Borges no 2º semestre de 2026.
 
 ## Autoria
-- Henrique Alves Ferreira
-- Matheus da Silva Souza
-- Gabriel Melo Santos
-- Rafael Ruppert Barrocal
+- Henrique Alves Ferreira - 081230015
+- Matheus da Silva Souza - 081230011
+- Gabriel Melo Santos - 081230044
+- Rafael Ruppert Barrocal - 081230002
 
 ## Descrição
 Simulador de escalonamento de tarefas em um processador. Implementa seis algoritmos (FCFS, SJF, SRTF, Round-Robin e prioridade cooperativa e preemptiva), trata recursos de uso exclusivo e reproduz o fenômeno da inversão de prioridades, com os mecanismos de herança e teto de prioridade. Também sorteia tarefas e lotes de cenários para comparar os algoritmos, aplica envelhecimento de prioridade para eliminar inanição, e permite salvar e recarregar um cenário em JSON.
