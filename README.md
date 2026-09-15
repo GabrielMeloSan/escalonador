@@ -9,7 +9,7 @@ Projeto prático da disciplina de Sistemas Operacionais, do 8º semestre do curs
 - Rafael Ruppert Barrocal
 
 ## Descrição
-Simulador de escalonamento de tarefas em um processador. Implementa seis algoritmos (FCFS, SJF, SRTF, Round-Robin e prioridade cooperativa e preemptiva), trata recursos de uso exclusivo e reproduz o fenomeno da inversão de prioridades, com os mecanismos de herança e teto de prioridade.
+Simulador de escalonamento de tarefas em um processador. Implementa seis algoritmos (FCFS, SJF, SRTF, Round-Robin e prioridade cooperativa e preemptiva), trata recursos de uso exclusivo e reproduz o fenômeno da inversão de prioridades, com os mecanismos de herança e teto de prioridade. Também sorteia tarefas e lotes de cenários para comparar os algoritmos, aplica envelhecimento de prioridade para eliminar inanição, e permite salvar e recarregar um cenário em JSON.
 
 ## Como executar
 
@@ -19,6 +19,11 @@ Clique duas vezes em `Simulador.exe`.
 Nao e necessario instalar nada.
 
 ### Script Python
+O projeto não depende de nenhuma biblioteca externa — só da biblioteca padrão do Python (`tkinter`).
+
+```
+python main.py
+```
 
 ## Estrutura do repositório
 
@@ -36,7 +41,7 @@ simulador_escalonamento/
 - `src/view/` - interface gráfica
 - `src/model/processo.py` - estrutura da tarefa
 - `src/model/prioridade.py` - modelagem da prioridade da tarefa
-- `src/control/simular_escalonamento.py` - raíz de chamado do simulador
+- `src/control/simular_escalonamento.py` - raiz de chamada do simulador
 - `src/control/motor.py` - motor de simulação
 - `src/control/politicas.py` - modelagem das políticas de escalonamento
 - `src/control/gerador.py` - gerador de tarefas e simulação em lotes
@@ -49,11 +54,12 @@ simulador_escalonamento/
 
 | O que faz | Onde |
 |-----------|------|
-| Os seis algoritmos | `simulador/politicas.py` |
-| Metricas por tarefa | `simulador/metricas.py` |
-| Recurso exclusivo | `simulador/motor.py` |
-| Heranca e teto | `simulador/motor.py` |
-| Sorteio de cenarios | `simulador/gerador.py` |
+| Os seis algoritmos | `src/control/politicas.py`, `src/control/motor.py` |
+| Métricas por tarefa | `src/model/processo.py` |
+| Recurso exclusivo, herança e teto | `src/control/algoritmos/recursos.py`, `src/control/motor.py` |
+| Envelhecimento de prioridade | `src/control/politicas.py`, `src/control/motor.py` |
+| Sorteio de tarefas e de lotes de cenários | `src/control/gerador.py` |
+| Salvar/carregar cenário | `src/control/persistencia.py` |
 
 ## Documentação
 
@@ -61,8 +67,8 @@ simulador_escalonamento/
 - [Tutorial de uso](./docs/tutorial_uso.pdf)
 - [Documentacao tecnica](./docs/documentacao_projeto.pdf)
 
-## Por onde comecar
+## Por onde começar
 
-1. Abra o programa e siga o tutorial de execução
-2. Reproduza um cenario de exemplo pelo tutorial de uso
-3. Consulte a documentação técnica para entender o código
+1. Rode `python main.py` e explore as abas: Tarefas, Parâmetros, Resultado e Lote de Cenários.
+2. Cadastre um conjunto de tarefas (manualmente ou por sorteio) e simule com os diferentes algoritmos.
+3. Consulte o código em `src/` para entender a implementação — veja "Arquivos de código" acima.
