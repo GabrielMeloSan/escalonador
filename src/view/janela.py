@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
-from view import aba_lote, aba_parametros, aba_resultado, aba_tarefas
-from view.estado import AppState
+from src.view import aba_lote, aba_parametros, aba_resultado, aba_tarefas
+from src.view.estado import AppState
 
 
 def centralizar_janela(janela, largura, altura):

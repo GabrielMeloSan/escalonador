@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from model.processo import Processo
+from src.model.processo import Processo
 
 
 @dataclass

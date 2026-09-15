@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
 
-from control import simular_escalonamento
-from control.algoritmos.nomes import Algoritmo
+from src.control import simular_escalonamento
+from src.control.algoritmos.nomes import Algoritmo
 
 _PROTOCOLOS = {"Nenhum": None, "Herança": "heranca", "Teto": "teto"}
 

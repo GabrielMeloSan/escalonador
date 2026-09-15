@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from model.prioridade import Prioridade
+from src.model.prioridade import Prioridade
 
 
 @dataclass

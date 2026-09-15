@@ -1,6 +1,6 @@
 from tkinter import messagebox, ttk
 
-from control import Faixas, rodar_lote
+from src.control import Faixas, rodar_lote
 
 
 def construir(notebook, estado):

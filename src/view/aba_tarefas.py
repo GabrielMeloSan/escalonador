@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, simpledialog, ttk
 
-from control import carregar_cenario, salvar_cenario, sortear_tarefas
-from model import Processo
-from model.prioridade import Prioridade
-from model.processo import SecaoCritica
+from src.control import carregar_cenario, salvar_cenario, sortear_tarefas
+from src.model import Processo
+from src.model.prioridade import Prioridade
+from src.model.processo import SecaoCritica
 
 
 def construir(notebook, estado):

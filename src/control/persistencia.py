@@ -1,7 +1,7 @@
 import json
 
-from model.prioridade import Prioridade
-from model.processo import Processo, SecaoCritica
+from src.model.prioridade import Prioridade
+from src.model.processo import Processo, SecaoCritica
 
 
 def _tarefa_para_dict(processo: Processo) -> dict:

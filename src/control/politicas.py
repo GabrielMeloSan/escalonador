@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Callable
 
-from control.algoritmos._base import chave_desempate
-from control.algoritmos.nomes import Algoritmo
+from src.control.algoritmos._base import chave_desempate
+from src.control.algoritmos.nomes import Algoritmo
 
 
 @dataclass(frozen=True)

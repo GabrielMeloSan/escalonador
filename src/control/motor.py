@@ -1,13 +1,13 @@
-from control.algoritmos._base import (
+from src.control.algoritmos._base import (
     avancar_tempo_para_chegada,
     chave_desempate,
     selecionar_proximo,
     trocar_contexto_padrao,
     despachar_com_quantum,
 )
-from control.algoritmos.recursos import bloqueada_por_recurso, calcular_tetos, prioridade_efetiva
-from control.politicas import chave_prioridade_com_envelhecimento
-from model.processo import Periodo
+from src.control.algoritmos.recursos import bloqueada_por_recurso, calcular_tetos, prioridade_efetiva
+from src.control.politicas import chave_prioridade_com_envelhecimento
+from src.model.processo import Periodo
 
 
 def simular(processos, politica, quantum, ctx_time, alfa=0, protocolo=None):

@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 
-from control import classificar_suspensoes
-from view.diagrama import COR_CTX, COR_ESPERA, COR_EXECUCAO, COR_SUSPENSA, desenhar_diagrama
-from view.estado import UltimoResultado
+from src.control import classificar_suspensoes
+from src.view.diagrama import COR_CTX, COR_ESPERA, COR_EXECUCAO, COR_SUSPENSA, desenhar_diagrama
+from src.view.estado import UltimoResultado
 
 _TIPO_EXIBICAO = {
     "bloqueio_direto": "Bloqueio direto",

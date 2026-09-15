@@ -2,11 +2,11 @@ import copy
 import random
 from dataclasses import dataclass
 
-from control.algoritmos.nomes import Algoritmo
-from control.motor import simular
-from control.politicas import POLITICAS
-from model.prioridade import Prioridade
-from model.processo import Processo
+from src.control.algoritmos.nomes import Algoritmo
+from src.control.motor import simular
+from src.control.politicas import POLITICAS
+from src.model.prioridade import Prioridade
+from src.model.processo import Processo
 
 
 @dataclass

@@ -1,8 +1,8 @@
 import copy
 
-from control.algoritmos.nomes import Algoritmo
-from control.motor import simular as simular_motor
-from control.politicas import POLITICAS
+from src.control.algoritmos.nomes import Algoritmo
+from src.control.motor import simular as simular_motor
+from src.control.politicas import POLITICAS
 
 _DISPATCH = {
     Algoritmo.FCFS.value: lambda p, q, c, a, pr: simular_motor(p, POLITICAS[Algoritmo.FCFS], q, c),
